@@ -1,0 +1,123 @@
+<LegitDataFlows>
+
+	<DataFlow name="Obstacle" permissionref="Obstacle" secLevel="Auth" mac="Blake2" enc="Speck64128">
+		<Source endpointid="34" />
+		<Sink endpointid="40" />
+	</DataFlow>
+
+	<DataFlow name="Fused Sensors" permissionref="Fused_Sensors" secLevel="Auth_Enc" mac="Blake2" enc="Speck64128">
+		<Source endpointid="41" />
+		<Sink endpointid="9" />
+	</DataFlow>
+
+	<DataFlow name="Velocity_Computation" permissionref="Velocity" secLevel="Enc" mac="Blake2" enc="Speck64128">
+		<Source endpointid="10" />
+		<Sink endpointid="25" />
+		<Sink endpointid="16" />
+	</DataFlow>
+
+	<DataFlow name="RPM_Computation" permissionref="RPM" secLevel="Nosec" mac="Blake2" enc="Speck64128">
+		<Source endpointid="26" />
+		<Sink endpointid="17" />
+	</DataFlow>
+
+	<DataFlow name="Temperature" permissionref="Temperature" secLevel="Enc" mac="Blake2" enc="Speck64128">
+		<Source endpointid="19" />
+		<Sink endpointid="18" />
+	</DataFlow>
+	
+	<DataFlow name="Config_1" permissionref="Config_1" secLevel="Auth" mac="Blake2" enc="Speck64128" topicName="Config1">
+		<Source endpointid="47" />
+		<Sink endpointid="7" />
+	</DataFlow>
+
+	<DataFlow name="Config_3" permissionref="Config_3" secLevel="Auth" mac="Blake2" enc="Speck64128" topicName="Config3">
+		<Source endpointid="48" />
+		<Sink endpointid="33" />
+	</DataFlow>
+
+	<DataFlow name="Config_10" permissionref="Config_10" secLevel="Auth" mac="Blake2" enc="Speck64128" topicName="Config10">
+		<Source endpointid="49" />
+		<Sink endpointid="39" />
+	</DataFlow>
+
+	<DataFlow name="Config_11" permissionref="Config_11" secLevel="Auth" mac="Blake2" enc="Speck64128" topicName="Config11">
+		<Source endpointid="50" />
+		<Sink endpointid="46" />
+	</DataFlow>
+
+	<DataFlow name="Config_12" permissionref="Config_12" secLevel="Auth" mac="Blake2" enc="Speck64128" topicName="Config12">
+		<Source endpointid="51" />
+		<Sink endpointid="15" />
+	</DataFlow>
+
+	<DataFlow name="Config_13" permissionref="Config_13" secLevel="Auth" mac="Blake2" enc="Speck64128" topicName="Config13">
+		<Source endpointid="52" />
+		<Sink endpointid="31" />
+	</DataFlow>
+
+	<DataFlow name="Config_14" permissionref="Config_14" secLevel="Auth" mac="Blake2" enc="Speck64128" topicName="Config14">
+		<Source endpointid="53" />
+		<Sink endpointid="24" />
+	</DataFlow>
+
+	<DataFlow name="DDSMetaData" permissionref="Meta" secLevel="Auth" mac="Blake2" enc="Speck64128" topicName="Meta">
+		<Source endpointid="1" />
+		<Sink endpointid="11" />
+		<Sink endpointid="20" />
+		<Sink endpointid="27" />
+		<Sink endpointid="35" />
+		<Sink endpointid="42" />
+	</DataFlow>
+	
+	<DataFlow name="Command" permissionref="Command" secLevel="Enc" mac="Blake2" enc="Speck64128" topicName="Command">
+		<Source endpointid="2" />
+		<Sink endpointid="12" />
+		<Sink endpointid="21" />
+		<Sink endpointid="28" />
+		<Sink endpointid="36" />
+		<Sink endpointid="43" />
+	</DataFlow>
+
+	<DataFlow name="CommandReturn" permissionref="CommandReturn" secLevel="Auth_Enc" mac="Blake2" enc="Speck64128" topicName="CommandReturn">
+		<Source endpointid="3" />
+		<Sink endpointid="13" />
+		<Sink endpointid="22" />
+		<Sink endpointid="29" />
+		<Sink endpointid="37" />
+		<Sink endpointid="44" />
+	</DataFlow>
+	
+	<DataFlow name="Logging" permissionref="Logging" secLevel="Auth" mac="Blake2" enc="Speck64128" topicName="Logging">
+		<Source endpointid="4" />
+		<Sink endpointid="14" />
+		<Sink endpointid="23" />
+		<Sink endpointid="30" />
+		<Sink endpointid="32" />
+		<Sink endpointid="38" />
+		<Sink endpointid="45" />
+	</DataFlow>
+
+<!--
+	<DataFlow name="Orchestrator" permissionref="Orchestrator" secLevel="Auth" mac="Blake2" enc="Speck64128" topicName="TimeSyncRes">
+			<Source endpointid="5" />
+			<Sink endpointid="" />
+	</DataFlow>
+	
+	<DataFlow name="Orchestrator" permissionref="Orchestrator" secLevel="Auth" mac="Blake2" enc="Speck64128" topicName="TimeSyncReq">
+		<Source endpointid="6" />
+		<Sink endpointid="" />
+	</DataFlow>
+	
+	<DataFlow name="Orchestrator" permissionref="Orchestrator" secLevel="Auth" mac="Blake2" enc="Speck64128" topicName="TimeSyncMasterCmd">
+		<Source endpointid="55" />
+		<Sink endpointid="" />
+	</DataFlow>
+
+	<DataFlow name="Orchestrator" permissionref="Orchestrator" secLevel="Auth" mac="Blake2" enc="Speck64128" topicName="OrchestratorModeManagement">
+		<Source endpointid="8" />
+		<Sink endpointid="" />
+	</DataFlow>
+-->
+
+</LegitDataFlows>

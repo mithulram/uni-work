@@ -1,0 +1,21 @@
+<ECU>
+	<ECU_ID>11</ECU_ID>
+	<ECU_Name>SensorModule</ECU_Name>
+	<Root_Key>60 13 6d 34 ee a1 8a 52 eb 35 80 ef d2 d0 0b 57</Root_Key>
+
+	<Services>
+		<Service id="13" name="SensFusion">
+			<Endpoint id="40" name="Obstacle" />
+			<Endpoint id="41" name="FusedSens" />
+		</Service>
+		
+		<!-- This is the meta service, i.e., a virtual service -->
+		<Service id="14" name="MetaService" virtual="true">
+			<Endpoint id="42" name="DDSMetaData" />
+			<Endpoint id="43" name="Command" />
+			<Endpoint id="44" name="CommandReturn" />
+			<Endpoint id="45" name="Logging" />
+			<Endpoint id="46" name="Config_10" />
+		</Service>
+	</Services>
+</ECU>

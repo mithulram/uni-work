@@ -1,0 +1,20 @@
+<ECU>
+    <ECU_ID>10</ECU_ID>
+    <ECU_Name>Radar</ECU_Name>
+    <Root_Key>2f 9a 8c be f8 a2 0d cb 3b e1 e3 85 66 11 f2 65</Root_Key>
+    
+    <Services>
+		<Service id="11" name="ObstDet">
+			<Endpoint id="34" name="Obstacle" />
+		</Service>
+		
+		<!-- This is the meta service, i.e., a virtual service -->
+		<Service id="12" name="MetaService" virtual="true">
+			<Endpoint id="35" name="DDSMetaData" />
+			<Endpoint id="36" name="Command" />
+			<Endpoint id="37" name="CommandReturn" />
+			<Endpoint id="38" name="Logging" />
+			<Endpoint id="39" name="Config_10" />
+		</Service>
+	</Services>
+</ECU>

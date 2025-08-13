@@ -1,0 +1,29 @@
+# Build directories
+build/
+*/build/
+*/CMakeFiles/
+*/cmake-build-*/
+
+# Backup files
+*.tar.gz
+*.backup
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp

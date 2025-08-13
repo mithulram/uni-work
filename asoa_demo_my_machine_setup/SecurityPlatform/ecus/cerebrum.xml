@@ -1,0 +1,23 @@
+<ECU>
+	<ECU_ID>12</ECU_ID>
+	<ECU_Name>Cerebrum</ECU_Name>
+	<Root_Key>98 61 96 ea c1 4a 72 ec 44 05 5f 31 82 b7 b6 55</Root_Key>
+
+	<Services>
+		<Service id="2" name="VComp">
+			<Endpoint id="9" name="FusedSens" />
+			<Endpoint id="10" name="Velocity" />
+		</Service>
+		
+		
+		<!-- This is the meta service, i.e., a virtual service -->
+		<Service id="3" name="MetaService" virtual="true">
+			<Endpoint id="11" name="DDSMetaData" />
+			<Endpoint id="12" name="Command" />
+			<Endpoint id="13" name="CommandReturn" />
+			<Endpoint id="14" name="Logging" />
+			<Endpoint id="15" name="Config_12" />
+		</Service>
+	</Services>
+
+</ECU>

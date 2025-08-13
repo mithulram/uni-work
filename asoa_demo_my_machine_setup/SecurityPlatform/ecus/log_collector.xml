@@ -1,0 +1,15 @@
+<ECU>
+	<ECU_ID>3</ECU_ID>
+	<ECU_Name>LogCollector</ECU_Name>
+	<Root_Key>d1 f2 d8 b2 ca 87 18 3c b8 54 35 67 77 97 8a 31</Root_Key>
+
+	<Services>
+		<Service id="9" name="LoggingService">
+			<Endpoint id="32" name="Logging" />
+		</Service>
+		
+		<Service id="10" name="MetaService" virtual="true">
+			<Endpoint id="33" name="Config_3" />
+		</Service>
+	</Services>
+</ECU>

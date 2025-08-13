@@ -1,0 +1,26 @@
+<ECU>
+	<ECU_ID>14</ECU_ID>
+	<ECU_Name>Dashboard</ECU_Name>
+	<Root_Key>9e 7b 0b da 12 63 03 0b db b1 11 6d e8 9b 06 51</Root_Key>
+
+	<Services>
+		<Service id="4" name="DisplayState">
+			<Endpoint id="16" name="Velocity" />
+			<Endpoint id="17" name="RPM" />
+			<Endpoint id="18" name="Temp" />
+		</Service>
+		
+		<Service id="5" name="TempComp">
+			<Endpoint id="19" name="Temp" />
+		</Service>
+		
+		<!-- This is the meta service, i.e., a virtual service -->
+		<Service id="6" name="MetaService" virtual="true">
+			<Endpoint id="20" name="DDSMetaData" />
+			<Endpoint id="21" name="Command" />
+			<Endpoint id="22" name="CommandReturn" />
+			<Endpoint id="23" name="Logging" />
+			<Endpoint id="24" name="Config_14" />
+		</Service>
+	</Services>
+</ECU>

@@ -1,0 +1,15 @@
+# ASOA MITM Attack System Dependencies
+
+# Core networking and packet manipulation
+scapy>=2.4.5
+netifaces>=0.11.0
+
+# System utilities
+psutil>=5.9.0
+
+# Linux-specific packet filtering (for NFQUEUE)
+netfilterqueue>=0.8.1; sys_platform == "linux"
+
+# Optional: Additional utilities for enhanced functionality
+# colorama>=0.4.4  # For colored terminal output
+# tabulate>=0.8.9  # For formatted table output

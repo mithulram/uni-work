@@ -1,0 +1,25 @@
+<ECU>
+	<ECU_ID>1</ECU_ID>
+	<ECU_Name>Orchestrator</ECU_Name>
+	<Root_Key>97 38 05 a2 15 37 0a 46 9d 3c d6 c0 71 a0 af 0d</Root_Key>
+
+	<Services>
+		<Service id="0" name="OrchestratorDummyService">
+		</Service>
+		
+		<!-- This is the meta service, i.e., a virtual service -->
+		<Service id="1" name="MetaService" virtual="true">
+			<Endpoint id="1" name="DDSMetaData" />
+			<Endpoint id="2" name="Command" />
+			<Endpoint id="3" name="CommandReturn" />
+			<Endpoint id="4" name="Logging" />
+<!--			<Endpoint id="5" name="TimeSyncRes" />
+			<Endpoint id="6" name="TimeSyncReq" />
+			<Endpoint id="55" name="TimeSyncMasterCmd" />
+			<Endpoint id="8" name="OrchestratorModeManagement" /> -->
+			<Endpoint id="7" name="Config_1" />
+		</Service>
+	</Services>
+
+</ECU>
+

@@ -1,0 +1,21 @@
+<ECU>
+	<ECU_ID>13</ECU_ID>
+	<ECU_Name>DynamicModule</ECU_Name>
+	<Root_Key>d2 a6 50 b4 79 f6 3d a4 8d 21 f3 f2 54 f4 7c 83</Root_Key>
+
+	<Services>
+		<Service id="7" name="RPMComp">
+			<Endpoint id="25" name="Velocity" />
+			<Endpoint id="26" name="RPM" />
+		</Service>
+		
+		<!-- This is the meta service, i.e., a virtual service -->
+		<Service id="8" name="MetaService" virtual="true">
+			<Endpoint id="27" name="DDSMetaData" />
+			<Endpoint id="28" name="Command" />
+			<Endpoint id="29" name="CommandReturn" />
+			<Endpoint id="30" name="Logging" />
+			<Endpoint id="31" name="Config_13" />
+		</Service>
+	</Services>
+</ECU>

@@ -1,0 +1,13 @@
+c SensorModule:TempSensor:Temperature -> Dashboard:TempDisplay:Temperature
+c SensorModule:SensorFusion:SensorData -> Cerebrum:DataProcessor:ProcessedData
+c Radar:RadarDetection:DetectionData -> Cerebrum:DataProcessor:ProcessedData
+c DynamicModule:RPMComp:RPMData -> Dashboard:DisplayState:StateData
+c Cerebrum:DataProcessor:ProcessedData -> Dashboard:DisplayState:StateData
+
+l SensorModule:TempSensor active
+l SensorModule:SensorFusion active
+l Dashboard:TempDisplay active
+l Dashboard:DisplayState active
+l Radar:RadarDetection active
+l Cerebrum:DataProcessor active
+l DynamicModule:RPMComp active

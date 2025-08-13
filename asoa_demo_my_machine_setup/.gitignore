@@ -1,0 +1,7 @@
+Rollout/IPRequest/.cached_addr
+**/build
+**/.idea
+**/.vscode
+LogCollector/logs.txt
+**/sdkconfig
+ECUs/SensorModule/config/build/

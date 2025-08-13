@@ -1,0 +1,13 @@
+<ECU>
+    <ECUID>1</ECUID>
+    
+    <LoggingLevel>Info</LoggingLevel>
+    
+    <Security>True</Security>
+    <Verification>True</Verification>
+    <NetworkLogging>False</NetworkLogging>
+    <PrintKeys>False</PrintKeys>
+
+    <MaxNumIncidents>40</MaxNumIncidents>
+    <MaxAttemptsSecurityPlatform>3</MaxAttemptsSecurityPlatform>
+</ECU>

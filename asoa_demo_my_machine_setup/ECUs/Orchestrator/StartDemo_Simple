@@ -1,0 +1,4 @@
+c SensorModule:TempSensor:Temperature -> Dashboard:TempDisplay:Temperature
+
+l SensorModule:TempSensor active
+l Dashboard:TempDisplay active

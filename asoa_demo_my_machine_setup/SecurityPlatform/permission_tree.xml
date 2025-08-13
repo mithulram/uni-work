@@ -1,0 +1,40 @@
+<ServicePermissions Degree="4">
+	<PermissionTree>
+		<NonSafetyCritical>
+			<Infotainment>
+			</Infotainment>
+			<System>
+				<Permission name="Temperature"/>
+				<Permission name="Logging"/>
+				<Permission name="Meta"/>
+			</System>
+		</NonSafetyCritical>
+		<Orchestrator>
+			<Permission name="CommandReturn" />
+			<Permission name="Command" />
+			<Permission name="Orchestrator"/>
+		</Orchestrator>
+		<Configuration>
+			<Permission name="Config_1" />
+			<Permission name="Config_2" />
+			<Permission name="Config_3" />
+			<Permission name="Config_10" />
+			<Permission name="Config_11" />
+			<Permission name="Config_12" />
+			<Permission name="Config_13" />
+			<Permission name="Config_14" />
+		</Configuration>
+		<SafetyCritical>
+			<EngineControl>
+			</EngineControl>
+			<Sensors>
+				<Permission name="Obstacle"/>
+				<Permission name="Fused_Sensors" />
+			</Sensors>
+			<DrivingDynamics>
+				<Permission name="RPM"/>
+				<Permission name="Velocity"/>
+			</DrivingDynamics>
+		</SafetyCritical>
+	</PermissionTree>
+</ServicePermissions>

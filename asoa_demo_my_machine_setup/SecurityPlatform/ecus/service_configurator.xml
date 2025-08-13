@@ -1,0 +1,17 @@
+<ECU>
+	<ECU_ID>2</ECU_ID>
+	<ECU_Name>ConfigServer</ECU_Name>
+	<Root_Key>a1 b1 e2 d8 73 cb 35 8b 28 46 23 77 f2 3e 20 76</Root_Key>
+
+	<Services>
+		<Service id="15" name="ConfigService" virtual="true">
+			<Endpoint id="47" name="Config_1" />
+			<Endpoint id="48" name="Config_3" />
+			<Endpoint id="49" name="Config_10" />
+			<Endpoint id="50" name="Config_11" />
+			<Endpoint id="51" name="Config_12" />
+			<Endpoint id="52" name="Config_13" />
+			<Endpoint id="53" name="Config_14" />
+		</Service>
+	</Services>
+</ECU>

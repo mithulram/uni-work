@@ -1,0 +1,45 @@
+<ServerConfig>
+	<Name>ConfigServer</Name>
+	<Network>
+		<HostAddress>10.0.0.28</HostAddress>
+		<UDP_Port>4420</UDP_Port>
+		<TCP_Port>4421</TCP_Port>
+	</Network>
+	<Broadcast>
+		<BroadcastPort>4410</BroadcastPort>
+		<WaitTimeMS>500</WaitTimeMS>
+	</Broadcast>	
+	<ThreadConfig>
+		<NrThreads>4</NrThreads>
+	</ThreadConfig>
+	<Security>
+		<RootKey>a1 b1 e2 d8 73 cb 35 8b 28 46 23 77 f2 3e 20 76</RootKey>
+		<FallbackKey>2c 58 15 56 77 ef 42 6f ec f7 8c af 3f 1a 68 bc</FallbackKey>
+	</Security>
+	<Servers>
+		<SecurityPlatform>
+			<FallbackIP>132.231.14.124</FallbackIP>
+			<FallbackPort>4451</FallbackPort>
+			<NetworkProtocol>UDP</NetworkProtocol>
+			<BroadcastPort>4412</BroadcastPort>
+			<ConnectAttempts>4</ConnectAttempts>
+			<BroadcastTimeoutMS>15000</BroadcastTimeoutMS>
+		</SecurityPlatform>
+		<ServiceConfigurator>
+			<FallbackIP>132.231.14.124</FallbackIP>
+			<FallbackPort>4451</FallbackPort>
+			<NetworkProtocol>UDP</NetworkProtocol>
+			<BroadcastPort>4410</BroadcastPort>
+			<ConnectAttempts>4</ConnectAttempts>
+			<BroadcastTimeoutMS>15000</BroadcastTimeoutMS>
+		</ServiceConfigurator>
+		<LogServer>
+			<FallbackIP>132.231.14.124</FallbackIP>
+			<FallbackPort>4451</FallbackPort>
+			<NetworkProtocol>UDP</NetworkProtocol>
+			<BroadcastPort>4411</BroadcastPort>
+			<ConnectAttempts>4</ConnectAttempts>
+			<BroadcastTimeoutMS>15000</BroadcastTimeoutMS>
+		</LogServer>
+	</Servers>
+</ServerConfig>
